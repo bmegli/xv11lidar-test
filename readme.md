@@ -80,7 +80,9 @@ See your own plot and note how to convert LIDAR angle/distance output and apply 
 
 If you are working in C/C++ you can use [xv11lidar](https://github.com/bmegli/xv11lidar) library with functions `InitLaser`, `ReadLaser` and `CloseLaser`.
 
-Everything below is *depracated*.
+### Warning - deprecated
+
+See Preamble 2, using this repository in this way is not recommended.
 
 If you don't feel comfortable with C/C++ code or don't want to write UART communication code, you can run xv11test with -raw argument and pipe its output to your application in any language.
 
