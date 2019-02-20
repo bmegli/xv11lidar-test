@@ -16,10 +16,6 @@ Using this repository for anything apart from rough testing is not recommended. 
 This is code for XV11 LIDAR test. The test outputs semicolon separated distance data for angles 0-359.
 The output can be redirected to file, transferred to PC and plotted.
 
-Alternatively, xv11test can be called with -raw argument to output synchronized binary data.
-You can pipe the data to your application written in any language (effectively getting LIDAR data on you standard input).
-See `examples` directory for C, C# and Java code.
-
 If you just want simple C/C++ library to communicate with the LIDAR see [xv11lidar](https://github.com/bmegli/xv11lidar) repository.
 
 ## LIDAR test
