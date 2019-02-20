@@ -1,11 +1,15 @@
 # XV11 LIDAR test
 
-## Preamble
+## Preamble 1
 
 This repository is phased out from ev3dev-mapping. Some information here may be not up-to-date for a while.
 Precisely: http://www.ev3dev.org/docs/tutorials/using-xv11-lidar/ was updated to always load dc-motor driver manually.
 This change is not reflected here yet.
 If you want to use this code with 2-wire soldered motor change the output port mode to dc-motor and use dc-motor instead of tacho-motor.
+
+## Preamble 2
+
+Using this repository for anything apart from rough testing is not recommended. Especially redirecting continous binary output (you will have no way to tell when the communication fails and it fails sometimes). This implementation is also not resitant to losing sync with laser.
 
 ## Overview
 
@@ -79,6 +83,8 @@ See your own plot and note how to convert LIDAR angle/distance output and apply 
 ### Working with binary data
 
 If you are working in C/C++ you can use [xv11lidar](https://github.com/bmegli/xv11lidar) library with functions `InitLaser`, `ReadLaser` and `CloseLaser`.
+
+Everything below is *depracated*.
 
 If you don't feel comfortable with C/C++ code or don't want to write UART communication code, you can run xv11test with -raw argument and pipe its output to your application in any language.
 
